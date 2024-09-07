@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-style">
+          <img src="./assets/images/image-pp7.png" alt="Adarsh Sharma" width="120%">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Adarsh Sharma">Adarsh Sharma</h1>
+
+          <p class="title">M.Tech CSE Student </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contact Details</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Work Email</p>
+
+              <a href="mailto:adarsh.sharma@students.iiit.ac.in" class="contact-link">adarsh.sharma@students.iiit.ac.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Personal Email</p>
+
+              <a href="mailto:123adarshsharma@gmail.com" class="contact-link">123adarshsharma@gmail.com</a>
+            </div>
+
+            <!-- <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div> -->
+
+            <!-- <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 " class="contact-link">+91</a>
+            </div> -->
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="document-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Resume</p>
+
+               <!-- Added a link to the resume -->
+              <a href="https://drive.google.com/file/d/1sxVlLCDzJsybXLN7RZxrdDFIQgZ5qGoT/view" target="_blank" class="resume-link">View Resume</a>
+  
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Hyderabad, Telangana, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/456adarshsharma?mibextid=LQQJ4d" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/adarsh-sharma-75b873165" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/atadarsh?igsh=MTl4bHBjbHkzdXp3dg%3D%3D&utm_source=qr" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Interest</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I’m Adarsh Sharma, currently pursuing an M.Tech in Computer Science and Engineering at IIIT Hyderabad. Previously, 
+            I worked as a System Engineer at Tata Consultancy Services (TCS) for over two and a half years, where I gained hands-on 
+            experience with Spring Boot, Microservices, Webservices, REST APIs, and Ansible.
+          </p>
+
+          <p>
+            My proficiency includes Java, C, C++, HTML, SQL, CSS, and JavaScript. 
+            I’m passionate about tackling complex challenges and designing efficient, scalable solutions. 
+            My experience and ongoing studies have refined my skills in both backend development and system integration.
+            I’m eager to apply my technology expertise to innovative projects and collaborate with dynamic teams. 
+            Let’s connect to explore opportunities or exchange ideas!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+          <h3 class="h3 service-title">Click To Know  More</h3>
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"><button class="navbar-link" data-nav-link>Projects</button></h4>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"><button class="navbar-link" data-nav-link>Portfolio</button></h4>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">
+                  <button class="navbar-link" onclick="window.open('https://github.com/AdarshOnGith', '_blank')">GitHub</button>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="  icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title"><button class="navbar-link" data-nav-link>Interest</button></h4>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+      </section>
+   </article> 
+
+
+
+
+
+      <!--
+        - #portfolio
+      -->
+
+      <article class="portfolio" data-page="portfolio">   
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">International Institute Of Information Technology, Hyderabad</h4>
+
+              <span>2024 — 2026</span>
+
+              <p class="timeline-text">
+                M.Tech Computer Science Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Institute Of Technology, Rgpv, Bhopal</h4>
+
+              <span>2017 — 2021</span>
+
+              <p class="timeline-text">
+                B.Tech Electronics and Communication Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Rani Durgawati Higher Secondary school</h4>
+
+              <span>2015 — 2016</span>
+
+              <p class="timeline-text">
+                Subjects: Maths, Physics and Chemistry
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">System Engineer @ Tata Consultance Services Ltd.</h4>
+
+              <span> July 2021 — Jan 2024</span>
+
+              <p class="timeline-text">
+                • Strong understanding of distributed systems and experience in solving complex problems. Familiarity with REST
+API development, testing, AWS and micro-services architecture.
+              </p>
+              
+              <p class="timeline-text"> • Engineered a multitude of JUnit classes for comprehensive unit testing and effectively employed Postman for
+                thorough endpoint testing. Orchestrated the deployment of multiple applications using Ansible, ensuring seamless
+                and efficient deployment processes across various environments.</p>
+                
+              <p class="timeline-text">• Upgraded the organization’s critical application from Spring 4 to Spring 5, demonstrating proficiency in
+                modernizing and optimizing software frameworks for enhanced performance and scalability.</p>
+
+              <p class="timeline-text">• Implemented caching strategies to optimize token generation, resulting in improved response times.</p>
+
+              <p class="timeline-text">• Spearheaded end-to-end development of applications, specializing in the modernization of legacy systems.</p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Trainee @ NIC - National Informatics Center</h4>
+
+              <span>Dec 2019 — Dec 2019</span>
+
+              <p class="timeline-text">
+                Worked as a trainee at NIC Office Panna (M.P), had insight on Networking elements like optical fibre, router,
+                switches etc and Govt project- mShikshaMitra, which has been designed and developed to facilitate a
+                m-Governance platform for School Education Sector in Madhya Pradesh India.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Trainee @ NMDC - National Mineral Development Corporation Ltd.</h4>
+
+              <span>Jun 2019 — Jun 2019</span>
+
+              <p class="timeline-text">
+                Worked as a trainee with diamond Processing Team at NMDC-Panna (M.P) had insight on PLC and automation
+                of diamond processing plant and how interrupts work on various cases during the diamond processing.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skill-definer">
+            <li class="skill-style">
+              <h5 class="h5">C</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">C++</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">Java</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">JavaScript</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">HTML</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">CSS</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">SQL</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">Agile</h5>
+            </li>
+            <li class="skill-style">
+              <h5 class="h5">JUnit</h5>
+            </li>
+          </ul>
+          
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Projects
+      -->
+
+      <article class="Projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul> -->
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/AdarshOnGith/AOS_Assignment">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/file-reversal3.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">File Reversal with custom Index</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/AdarshOnGith/AOS_Assignment2-Assignment2">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/POSIX_logo.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">POSIX SHELL</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"> </ion-icon>
+                  </div>
+
+                  <img src="./assets/images/image-resizer.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Image Resizer with Content Aware Feature (Ongoing) </h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Research Paper Impact Analyzer (Ongoing) </h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!-- 
+        - #Interests
+      -->
+     
+      <article class="Interest" data-page="interest">
+
+        <header>
+          <h2 class="h2 article-title">Hobbies & Interest</h2>
+        </header>
+
+        <section class="blog-posts">
+          <h2 class="hd3">Hobbies</h2>
+          <ul class="blog-posts-list">
+          <li class="blog-post-item">
+            <a href="#">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <span class="dot"></span>
+                  <h6 class="h5 blog-item-title">Badminton</h6>
+                </div>
+            </div>
+          </a>
+            
+          </li>
+
+          
+          <li class="blog-post-item">
+            <a href="#">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <span class="dot"></span>
+                  <h6 class="h5 blog-item-title">Basketball</h6>
+                </div>
+            </div>
+          </a>
+            
+          </li>
+
+
+          <li class="blog-post-item">
+            <a href="#">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <span class="dot"></span>
+                  <h6 class="h5 blog-item-title">Swimming</h6>
+                </div>
+            </div>
+          </a>
+            
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <span class="dot"></span>
+                  <h6 class="h5 blog-item-title">Cooking</h6>
+                </div>
+            </div>
+          </a>
+            
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <span class="dot"></span>
+                  <h6 class="h5 blog-item-title">Cricket</h6>
+                </div>
+               
+            </div>
+          </a>
+            
+          </li>
+
+          <li class="blog-post-item">
+            <a href="#">
+              <div class="blog-content">
+
+                <div class="blog-meta">
+                  <span class="dot"></span>
+                  <h6 class="h5 blog-item-title">Virtual Gaming</h6>
+                </div>
+               
+            </div>
+          </a>
+            
+          </li>
+          </ul>
+        </section>
+        
+
+        <section class="blog-posts">
+
+          <h2 class="hd3">Interests</h2>
+          <ul class="blog-posts-list">
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> -->
+              <li class="blog-post-item">
+                <a href="#">
+                  <div class="blog-content">
+    
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+                      <h6 class="h5 blog-item-title">Machine Learning</h6>
+                    </div>
+                </div>
+              </a>
+                
+              </li>
+    
+              
+              <li class="blog-post-item">
+                <a href="#">
+                  <div class="blog-content">
+    
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+                      <h6 class="h5 blog-item-title">Algorithms</h6>
+                    </div>
+                </div>
+              </a>
+                
+              </li>
+    
+    
+              <li class="blog-post-item">
+                <a href="#">
+                  <div class="blog-content">
+    
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+                      <h6 class="h5 blog-item-title">Software Development</h6>
+                    </div>
+                </div>
+              </a>
+                
+              </li>
+    
+              <li class="blog-post-item">
+                <a href="#">
+                  <div class="blog-content">
+    
+                    <div class="blog-meta">
+                      <span class="dot"></span>
+                      <h6 class="h5 blog-item-title">Image Processing</h6>
+                    </div>
+                </div>
+              </a>                
+              </li>
+          </ul>
+
+        </section>
+
+      </article> 
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8065.345298780104!2d78.34659259760353!3d17.443631604772868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93a276decedf%3A0x2c12e79e6f9344e2!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1725642419984!5m2!1sen!2sin"
+              width="400" height="300"  loading="lazy">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
