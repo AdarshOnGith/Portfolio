@@ -1080,7 +1080,7 @@ API development, testing, AWS and micro-services architecture.
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <!-- <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1095,7 +1095,33 @@ API development, testing, AWS and micro-services architecture.
               <span>Send Message</span>
             </button>
 
-          </form>
+          </form> -->
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="5211555f-7e6a-4251-bc4b-2e6cdd5998dc">
+        
+            <div class="input-wrapper">
+                <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+        
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <!-- Optional Redirect -->
+            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        
+            <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+            </button>
+        
+        </form>
+        
 
         </section>
 

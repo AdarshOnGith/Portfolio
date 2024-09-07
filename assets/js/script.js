@@ -134,6 +134,33 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form[data-form]');
+  
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => {
+          if (response.ok) {
+              // Clear the form inputs
+              form.reset();
+              alert('Your message has been sent successfully!');
+          } else {
+              alert('There was a problem with your submission.');
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert('There was a problem with your submission.');
+      });
+  });
+});
 
 
 // page navigation variables
