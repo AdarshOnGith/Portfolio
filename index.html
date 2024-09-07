@@ -608,7 +608,7 @@ API development, testing, AWS and micro-services architecture.
             </li> -->
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/AdarshOnGith/AOS/tree/f5c9823ae37d2087ef447209b4e7dfd786da3d66/Assignments/Assignment2">
+              <a href="https://github.com/AdarshOnGith/AOS/tree/main/Assignments/Assignment2">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1097,30 +1097,26 @@ API development, testing, AWS and micro-services architecture.
 
           </form> -->
 
-          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+          
+<form action="https://api.web3forms.com/submit" method="POST">
 
-            <!-- Replace with your Access Key -->
-            <input type="hidden" name="access_key" value="5211555f-7e6a-4251-bc4b-2e6cdd5998dc">
-        
-            <div class="input-wrapper">
-                <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-        
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-        
-            <!-- Honeypot Spam Protection -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        
-            <!-- Optional Redirect -->
-            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-        
-            <button class="form-btn" type="submit" data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-            </button>
-        
-        </form>
+  <!-- Replace with your Access Key -->
+  <input type="hidden" name="access_key" value="5211555f-7e6a-4251-bc4b-2e6cdd5998dc">
+
+  <!-- Form Inputs. Each input must have a name="" attribute -->
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+
+  <!-- Honeypot Spam Protection -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+  <!-- Custom Confirmation / Success Page -->
+  <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+  <button type="submit">Submit Form</button>
+
+</form>
         
 
         </section>
